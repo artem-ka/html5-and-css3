@@ -1,4 +1,11 @@
-/* Universal */
+/* General */
+
+@font-face {
+    font-family: "Socialico.ttf";
+    src: url("../fonts/Socialico.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 * {
     margin: 0;
@@ -327,6 +334,7 @@ body {
 .offer {
     border: 1px solid black;
     border-radius: 5px;
+    background: #445162;
 }
 
 .offer-title {
@@ -386,12 +394,12 @@ body {
 
 .btn:hover {
     color: white;
-    background-color: orange;
+    background-color: #888;
 }
 
 .btn:active {
     color: black;
-    background-color: red;
+    background-color: #444;
 }
 
 .btn-txt {
