@@ -2,9 +2,7 @@
 
 @font-face {
     font-family: "Socialico.ttf";
-    src: url("../fonts/Socialico.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+    src: url("../fonts/Socialico.ttf");
 }
 
 * {
@@ -296,6 +294,7 @@ body {
     font-weight: 400;
     line-height: 18px;
     font-style: italic;
+    padding: 5px;
 }
 
 .review-author {
@@ -306,6 +305,7 @@ body {
     line-height: 18px;
     margin-top: 15px;
     display: block;
+    padding: 5px;
 }
 
 
@@ -404,4 +404,150 @@ body {
 
 .btn-txt {
     margin: auto;
+}
+
+/* Footer */
+
+.contacts {
+    padding: 50px 230px 50px 230px;
+    background: #445162;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts h2 {
+    width: 100%;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback input {
+    display: block;
+    width: 500px;
+    min-height: 40px;
+    background-color: #ffffff;
+    color: #445162;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 0 0 10px;
+}
+
+.feedback textarea {
+    display: block;
+    width: 500px;
+    min-height: 170px;
+    background-color: #ffffff;
+    color: #445162;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0 0 10px;
+    ;
+}
+
+.feedback input[type="submit"] {
+    margin: 0;
+    text-align: center;
+    padding: 14px;
+    width: 140px;
+    min-height: 40px;
+    background-color: #ffffff;
+    color: #445162;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.communication {
+    margin-left: 46px;
+}
+
+.contact-variant {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-variant:nth-child(4) {
+    margin-bottom: 35px;
+}
+
+.contact-variant:nth-child(1)::before {
+    content: "";
+    background: url('../img/skype_icon.png') no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px 0 0;
+    
+}
+
+.contact-variant:nth-child(2)::before {
+    content: "";
+    background: url(../img/icq_icon.png) no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px 0 0;
+}
+
+.contact-variant:nth-child(3)::before {
+    content: "";
+    background: url(../img/email_icon.png) no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px 0 0;
+}
+
+.contact-variant:nth-child(4)::before {
+    content: "";
+    background: url(../img/phone_icon.png) no-repeat;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin: 0 5px 0 0;
+}
+
+.social-icons {
+    font-family: "Socialico.ttf";
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+}
+
+.copyright {
+    text-align: center;
+    color: #445162;
+    padding: 10px 0 10px 0;
+    font-size: 13px;
+    font-weight: 600;
 }
