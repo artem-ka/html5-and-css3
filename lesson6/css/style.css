@@ -1,0 +1,272 @@
+/* Fonts */
+
+@font-face {
+    font-family: montserrat;
+    src: url('../fonts/montserrat.ttf')
+}
+
+@font-face {
+    font-family: raleway;
+    src: url('../fonts/raleway.ttf')
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url('../fonts/raleway-semibold.ttf')
+}
+
+@font-face {
+    font-family: raleway-extrabold;
+    src: url('../fonts/raleway-extrabold.ttf')
+}
+
+/* General */
+
+body {
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header-first {
+    background-color: #f4f5f8;
+    background-image: url('../img/header-bg-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1920px;
+    min-height: 1024px;
+    padding: 40px 150px 40px 150px;
+}
+
+.logo-and-menu {
+    display: flex;
+}
+
+.link-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    text-decoration: none;
+    background-color: transparent;
+    margin: 0 220px 0 220px;
+}
+
+.link-logo-svg {
+    fill: #fff;
+}
+
+.link-logo-txt {
+    color: #ffffff;
+    font-family: raleway;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+}
+
+.link-logo:hover .link-logo-svg {
+    fill: #998675;
+}
+
+.link-logo:hover .link-logo-txt {
+    color: #998675;
+}
+
+.link-logo:active .link-logo-svg {
+    fill: #fbfaf8;
+    ;
+}
+
+.link-logo:active .link-logo-txt {
+    color: #fbfaf8;
+}
+
+.header-menu {
+    margin-right: 60px;
+}
+
+.header-menu-ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-menu-ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.header-menu-ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header-menu-ul li a:hover {
+    color: #998675;
+}
+
+.header-menu-ul li a:active {
+    color: #fbfaf8;
+}
+
+.basket {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.basket-icon {
+    fill: #fff;
+}
+
+.basket:hover .basket-icon {
+    fill: #998675;
+}
+
+.basket:active .basket-icon {
+    fill: #fbfaf8;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon-svg {
+    fill: #fff;
+    margin-left: 30px;
+}
+
+.search-item {
+    display: none;
+}
+
+.search:hover .search-item {
+    display: block;
+    margin-left: 10px;
+}
+
+.slider {
+    position: relative;
+    padding: 380px 0 380px 0;
+}
+
+.arrow-left,
+.arrow-right {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.arrow-left-svg,
+.arrow-right-svg {
+    fill: #888;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 0;
+    top: 475px;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 0;
+    top: 475px;
+}
+
+.slider-content {
+    text-align: center;
+    width: 590px;
+    margin: 0 auto;
+}
+
+.slider-content h2 {
+    color: #ffffff;
+    font-family: raleway;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.slider-content h1 {
+    color: #ffffff;
+    font-family: raleway-extrabold;
+    font-size: 52px;
+    font-weight: 400;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.slider-content p {
+    color: #ffffff;
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-link {
+    display: flex;
+    width: 170px;
+    padding: 14px 38px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: inset 0 -3px 0 #736357;
+    border-radius: 3px;
+    background-color: #998675;
+    margin: 70px auto 0 auto;
+}
+
+.btn-link-hover {
+    background-color: #fff;
+    color: #998675;
+}
+
+.btn-link-hover {
+    background-color: #998675;
+    color: #fff;
+}
+
+.btn-link-txt {
+    margin: auto;
+    font-family: "raleway-extrabold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 900px;
+    right: 900px;
+}
+
+.pagination-link {
+    display: block;
+    width: 11px;
+    min-height: 11px;
+    margin: 5px;
+    background-color: #888;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.pagination-link:hover {
+    background-color: transparent;
+    border: 2px solid #888;
+}
